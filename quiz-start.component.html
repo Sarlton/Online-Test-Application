@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+      integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="quiz-start.component.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-header">
+        <h1>Quiz</h1>
+      </div>
+    </div>
+
+    <div>
+      <div class="row">
+        <div class="col-xs-8">
+          <h2>Progress:</h2>
+          <div class="btn-toolbar">
+            <button class="btn">
+              <span class="glyphicon"></span>
+            </button>
+          </div>
+        </div>
+        <div class="col-xs-4">
+          <div class="row">
+            <h4>Legend:</h4>
+            <div class="col-sm-4">
+              <button class="btn btn-info">
+                <span class="glyphicon glyphicon-pencil"></span>
+              </button>
+              <p>Answered</p>
+            </div>
+            <div class="col-sm-4">
+              <button class="btn btn-danger">
+                <span class="glyphicon glyphicon-question-sign"></span>
+              </button>
+              <p>Unanswered</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="alert alert-danger">
+          Error! You have not answered all of the questions!
+          <button class="close"></button>
+        </div>
+        <h3>Question:</h3>
+        <div class="well well-sm">
+          <div class="row">
+            <div class="col-xs-12">
+              <!-- <h4>
+                
+              </h4> -->
+
+              <div class="row">
+                <div class="col-sm-6">
+                  <h4 class="answer"></h4>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="image-answer">
+                    <img ng-src="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn btn-warning">Continue</button>
+        </div>
+
+        <div class="well well-sm">
+          <div class="row">
+            <div class="col-xs-12">
+              <h3>Are you sure you want to submit your answers?</h3>
+              <button class="btn btn-success">Yes</button>
+              <button class="btn btn-danger">No</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.2/angular.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+      integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
